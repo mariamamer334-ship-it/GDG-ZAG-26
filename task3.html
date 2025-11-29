@@ -1,0 +1,128 @@
+
+<!doctype html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8"/>
+        <title>learn</title>
+    </head>
+    <body>
+        <h1>Basic HTML Form Elements</h1>
+       <fieldset>
+        <legend>Personal Information</legend>
+        <form>
+            <label for="name">Name(text)</label>
+            <input id="name" name="name" type="text" required outofocuse placeholder="enter the name" minlength="10" maxlength="30"/>
+            </form>
+       </fieldset>
+
+            <fieldset>
+                <legend>Contact& Security</legend>
+                <form>
+                    <label for="email">Email:</label>
+                     <input id="email" name="email" type="email" required  placeholder="enter the email" minlength="18" />  <br>
+                    <br>
+                     <label for="password">Password:</label>  
+                     <input id="password"  name="password" type="password" required  placeholder="enter the password" minlength="8" maxlength="20" /> 
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Preferences
+                </legend>
+                <label id="color"> Favorite Color</label>
+                <input type="color" name="color"/>
+            </fieldset>
+       <fieldset>
+        <legend>
+            Range & Ootions
+        </legend>
+        <label for="range">
+            Volume (Range 0-100):
+        </label>
+        <input   id="range"    type="range"/>
+        <br>
+        <br>
+        <br>
+        <label>
+            Select Your Favorite Pet:
+        </label>
+        <br>
+        <BR>
+        <input type="radio" id="dog" name="pet"/>
+        <label for="dog">Dog</label>
+        <br>
+        <input type="radio" id="Cat" name="pet"/>
+        <label for="Cat">Cat</label>
+        <br>
+        <input type="radio" id="Bird" name="pet"/>
+        <label for="Bird">Bird</label>
+        <br> <br> <br> <br>
+        <label>Interest (cheack all that apply):
+        </label>
+        <br> <br>
+        <input type="checkbox" id="coding" > <label for="coding">Coding</label><br>
+        <input type="checkbox" id="music" > <label for="music">music</label><br>
+         <input type="checkbox" id="travel" > <label for="travel">Travel</label><br>
+           </fieldset>
+           <fieldset>
+            <legend>Selectoin</legend>
+            <label for="country"> Choose a Country:</label>
+            <select id="country" name="country">
+                <optgroup label="country">
+                    <option value="egypt"> Egypt</option>
+                     <option value="United kingdom" selected>United kingdom </optUnited >
+                      <option value="USA"> USA</option> 
+                      <option value="china"> China</option>
+                </optgroup>
+            </select>
+           </fieldset>
+           <fieldset>
+            <legend>
+                Comments
+            </legend>
+            <label for="textarea">Your Comments (text area):</label><br>
+            <textarea  id="textarea" name="Comments" required  minlength="10" cols="40" rows="7" ></textarea>
+           </fieldset>
+           <fieldset>
+            <legend>
+                File Upload
+            </legend>
+            <label for="file">
+                Upload a File:
+            </label>
+            <input id="file" type="file">
+           </fieldset>
+           <fieldset>
+            <legend>
+                SpecializedTexet Inputs
+            </legend>
+            <label> Search This Site:</label>
+            <input type="text" >
+            <br> <br>
+            <label for="url">Your Website Url:</label>
+            <input id="url" type="url" placeholder="http://example.com">
+           </fieldset>
+           <fieldset>
+            <legend>Data & Time</legend>
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+            <br><br>
+            <label for="month">month</label>
+            <input type="month" id="month">
+            <br> <br>
+            <label for="time">Time</label>
+            <input type="time" id="time">
+           </fieldset>
+           <fieldset>
+            <legend>
+               Datalist (Suggestions)
+            </legend>
+            <label >Choose a Browser (With Suggestions):</label>
+            <input type="text"/>
+           </fieldset>
+           <hr>
+           <br>
+           <button>Submit Form</button>
+           <button> Clear Form</button>
+    </body>
+</html>
